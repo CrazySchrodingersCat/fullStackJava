@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>{{data.civ.name}}</h2>
+<mat-dialog-content>
+    <p>Expansion: {{data.civ.expansion}}</p>
+    <p>Army type: {{data.civ.army_type}}</p>
+    <p>Team bonus: {{data.civ.team_bonus}}</p>
+    <p>Unique units:</p>
+    <ul>
+        <li *ngFor="let item of units">{{item.name}} : {{item.description}}</li>
+    </ul>
+    <p>Civilization bonus:</p>
+    <ul>
+        <li *ngFor="let item of data.civ.civilization_bonus">{{item}}</li>
+    </ul>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="true">Close</button>
+</mat-dialog-actions>

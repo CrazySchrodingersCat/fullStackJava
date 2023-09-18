@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>{{structure.name}}</mat-card-title>
+    <mat-card-subtitle>{{structure.age}} age</mat-card-subtitle>
+    <mat-card-content>
+        <ul>
+            <li>Build time: {{structure.build_time}}</li>
+            <li>Hitpoints: {{structure.hit_points}}</li>
+            <li>Attack: {{structure.attack}}</li>
+        </ul>
+    </mat-card-content>
+    <mat-card-footer>
+        <img src="assets/wood.png" alt="wood" *ngIf="structure.cost.Wood"> {{structure.cost.Wood}}
+        <img src="assets/food.png" alt="food" *ngIf="structure.cost.Food"> {{structure.cost.Food}}
+        <img src="assets/gold.png" alt="gold" *ngIf="structure.cost.Gold"> {{structure.cost.Gold}}
+        <img src="assets/stone.png" alt="stone" *ngIf="structure.cost.Stone"> {{structure.cost.Stone}}
+    </mat-card-footer>
+</mat-card>

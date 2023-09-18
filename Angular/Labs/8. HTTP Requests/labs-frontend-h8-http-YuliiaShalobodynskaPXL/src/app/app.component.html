@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>PXL Confessions</h1>
+  <p><input type="text" class="form-control" name="search" placeholder="search..." [(ngModel)]="searchTerm" (keyup)="filterItems()"/></p>
+  <!-- <app-confession-item *ngFor="let item of dataList" [confession]="item"> -->
+  <app-confession-item *ngFor="let item of confessions$ | async" [confession]="item">
+  </app-confession-item>
+  <app-add-confession (newItemEvent)="processAdd($event)"></app-add-confession>
+
+
+</div>
