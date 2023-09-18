@@ -1,0 +1,5 @@
+<header>
+    <h2>Movie database</h2>
+</header>
+<app-add-movie (addMovie)='refreshList()'></app-add-movie>
+<app-movie-item *ngFor="let mov of movies" [movie]="mov"></app-movie-item>

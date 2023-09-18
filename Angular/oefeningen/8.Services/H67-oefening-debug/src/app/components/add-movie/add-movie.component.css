@@ -1,0 +1,29 @@
+:host{
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+}
+
+input[type='text']{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 3px 0px;
+    box-sizing: border-box;
+}
+
+input[type='submit']{
+    padding: 10px;
+    width: 100%;
+    margin: 3px 0px;
+    box-sizing: border-box;
+}
+
+input[type='text'].ng-invalid{
+    border: 2px solid red;
+}
+
+input[type='text'].ng-valid{
+    border: 2px solid green;
+}
+

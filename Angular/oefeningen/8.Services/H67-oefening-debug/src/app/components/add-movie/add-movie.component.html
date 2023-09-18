@@ -1,0 +1,8 @@
+<form [formGroup]="movieForm" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="name" placeholder="Name" />
+  <input type="text" formControlName="genre" placeholder="Genre" />
+  <input type="text" formControlName="year" placeholder="Year of release" />
+  <input type="text" formControlName="cover" placeholder="Cover path" />
+  
+  <input type="submit" value="Add movie" />
+</form>
